@@ -1,2 +1,25 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+<h1>Administration Dashboard</h1>
+<br>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col"> # Products in Database </th>
+      <th scope="col"> # of Categories </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        <%= @product_count %>
+      </td>
+      <td>
+        <%= @category_count %>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<a href="/admin/products" class="btn btn-primary">View Products List (Admin View)</a>    <a href="/" class="btn btn-secondary">Return to Product Index (User View)</a>
+<br>
+
